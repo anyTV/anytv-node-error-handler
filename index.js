@@ -1,6 +1,7 @@
-var logger  = require(__dirname + '/logger');
+var logger;
 
-module.exports = function () {
+module.exports = function (_logger) {
+    logger = _logger;
     return function (err, req, res, next) {
         logger.log('error', err.message || err.data || err);
         if (err.stack) {
