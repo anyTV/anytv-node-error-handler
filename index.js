@@ -1,7 +1,7 @@
 var logger;
 
 module.exports = function (_logger) {
-    logger = _logger;
+    logger = logger || _logger;
     return function (err, req, res, next) {
         logger.log('error', err.message || err.data || err);
         if (err.stack) {
