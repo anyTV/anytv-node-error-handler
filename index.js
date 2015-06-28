@@ -11,17 +11,19 @@ module.exports = function (_logger) {
 
         logger.log('error', error);
 
-        for (key in error) {
-        	if (typeof(error[key]) !== 'function') {
-        		logger.log('warn', key + ': ' + error[key]);
-        	}
+        if (typeof error === 'object') {
+	        for (key in error) {
+	        	if (typeof(error[key]) !== 'function') {
+	        		logger.log('warn', key + ': ' + error[key]);
+	        	}
+	        }
         }
 
         if (err.stack) {
             logger.log('error', err.stack);
         }
 
-        return res.status(err.statusCode || 400)
+        return res.status(err.statusCode || 500)
                 .send({message : error});
     };
 };
