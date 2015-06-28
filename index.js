@@ -14,7 +14,7 @@ module.exports = function (_logger) {
         if (typeof error === 'object') {
 	        for (key in error) {
 	        	if (typeof(error[key]) !== 'function') {
-	        		logger.log('warn', key + ': ' + error[key]);
+	        		logger.log('warn', key + ': ' + JSON.stringify(error[key]));
 	        	}
 	        }
         }
