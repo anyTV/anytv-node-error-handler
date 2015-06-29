@@ -9,6 +9,10 @@ module.exports = function (_logger) {
     	var error = err.message || err.data || err,
     		key;
 
+        if (!err instanceof Error) {
+            error = new Error(error);
+        }
+
         logger.log('error', error);
 
         if (typeof error === 'object') {
