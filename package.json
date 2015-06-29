@@ -1,6 +1,6 @@
 {
   "name": "anytv-node-error-handler",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Express error middleware",
   "main": "index.js",
   "scripts": {

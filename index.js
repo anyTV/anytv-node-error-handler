@@ -9,7 +9,7 @@ module.exports = function (_logger) {
     	var error = err.message || err.data || err,
     		key;
 
-        if (!err instanceof Error) {
+        if (!(err instanceof Error)) {
             err = new Error(err);
         }
 
