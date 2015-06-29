@@ -10,7 +10,7 @@ module.exports = function (_logger) {
     		key;
 
         if (!err instanceof Error) {
-            error = new Error(error);
+            err = new Error(err);
         }
 
         logger.log('error', error);
