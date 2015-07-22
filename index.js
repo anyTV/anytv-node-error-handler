@@ -28,7 +28,7 @@ module.exports = function (_logger) {
         }
 
         return res.status(err.statusCode || 500)
-                .send({message : error});
+                .send({errors : error});
     };
 };
 
