@@ -1,7 +1,7 @@
 # anytv-node-error-handler
 
 [![Build Status](https://travis-ci.org/anyTV/anytv-node-error-handler.svg?branch=master)](https://travis-ci.org/anyTV/anytv-node-error-handler)
-[![Coverage Status](https://coveralls.io/repos/anyTV/anytv-node-error-handler/badge.svg?branch=master&service=github)](https://coveralls.io/github/anyTV/anytv-node-error-handler?branch=master)
+[![Coverage Status](https://coveralls.io/repos/anyTV/anytv-node-error-handler/badge.svg?branch=master&service=github&t)](https://coveralls.io/github/anyTV/anytv-node-error-handler?branch=master)
 [![Dependencies](https://david-dm.org/anyTV/anytv-node-error-handler.svg)](https://david-dm.org/anyTV/anytv-node-error-handler)
 [![npm version](https://badge.fury.io/js/anytv-node-error-handler.svg)](https://badge.fury.io/js/anytv-node-error-handler)
 
