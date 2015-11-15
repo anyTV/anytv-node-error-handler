@@ -25,7 +25,7 @@ import express from 'express';
 
 app = express();
 
-app.use(error_handler());
+app.use(error_handler(logger));
 ```
 
 
