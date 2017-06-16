@@ -1,8 +1,14 @@
 {
   "name": "anytv-node-error-handler",
-  "version": "0.0.10",
+  "version": "1.0.0",
   "description": "Express error handler middleware",
   "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib/index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/anyTV/anytv-node-error-handler.git"
@@ -20,15 +26,23 @@
   },
   "homepage": "https://github.com/anyTV/anytv-node-error-handler",
   "devDependencies": {
-    "istanbul": "^0.4.0",
-    "chai": "^3.4.1",
-    "coveralls": "^2.11.4",
-    "mocha": "^2.3.3",
-    "mocha-lcov-reporter": "^1.0.0"
+    "anytv-mailer": "^1.0.0",
+    "chai": "^4.0.2",
+    "coveralls": "^2.13.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.13.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "mocha-lcov-reporter": "^1.3.0"
   },
   "scripts": {
     "test": "make test",
     "coverage": "export NODE_ENV=test && istanbul cover _mocha -- --recursive -R spec -t 5000 -s 100",
     "test-dev": "export NODE_ENV=test && mocha --watch --recursive -R spec -t 5000 -s 100"
+  },
+  "dependencies": {
+    "anytv-mailer": "^1.0.1"
   }
 }
