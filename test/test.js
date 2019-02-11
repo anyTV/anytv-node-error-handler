@@ -59,7 +59,7 @@ describe('Overall test', () => {
                 err.should.exist;
             }
         })('err',
-            {},
+            {body: {}},
             {
                 status: () => {
                     return {send: (halo) => done()};
